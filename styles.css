@@ -21,6 +21,8 @@
 	font-size: 28px; 
 	padding: 0px 10px;
 	background-color: #5d8cd8;
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("binding_light.png");
 	margin-left:10%;
 	margin-right:10%;
 	margin-bottom:5%;
@@ -33,6 +35,8 @@
 	top: 50;
 	left: 2%;
 	background-color: gray;
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("binding_dark.png");
 	overflow-x: hidden;
 	padding-top: 20px;
 	padding-bottom: 20px;
