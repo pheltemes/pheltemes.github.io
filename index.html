@@ -9,14 +9,14 @@
 <body>
 
 <div class="sidebar">
-	<a href="#home">ABOUT</a>
+	<a href="#about">ABOUT</a>
 	<a href="#education">EDUCATION</a>
 	<a href="#skills">SKILLS</a>
 	<a href="#projects">PROJECTS</a>
 	<a href="#contact">CONTACT</a>
 </div>
 
-<div class="profile">
+<div class="profile" id="about">
 	<div class="description">
 		<img style= "max-width: 40%; display: inline; border-radius:10%; float:left;" src="profile.jpg" alt="Profile Picture">
 		Hi, I am Paul Heltemes, a Software Developer in the Twin Cities. I generally work in C++ and Python on backend development but have experience in Andriod App Development in Kotlin. I also am adept at data modeling in R and hope to have a career that utilizes both mathematics and computer science theory.
@@ -30,7 +30,7 @@
 </div>
 
 <section>
-<div class="main">
+<div class="main" id="education">
 	<img style = "float:right; max-width: 10%; height:auto; position:relative; padding-top:5px; right:10%;" src="stolaf_pic.jpg" alt="St.Olaf Photo">
 	<p>Education</p>
 	<ul>
@@ -50,7 +50,8 @@
 		<div class="skill" onmouseover="htmlSkill()" onmouseout="htmlSkill2()" Id="Html">HTML</div>
 		<div class="skill" onmouseover="cssSkill()" onmouseout="cssSkill2()" Id="Css">CSS</div>
 		<div class="skill" onmouseover="jsSkill()" onmouseout="jsSkill2()" Id="Js">Javascript</div>
-		<div class="skill" onmouseover="utcSkill()" onmouseout="utcSkill2()" Id="Utc">Unix Terminal Commands</div>
+		<div class="skill" onmouseover="utcSkill()" onmouseout="utcSkill2()" Id="Utc">Unix Commands</div>
+		<div class="skill" onmouseover="kotSkill()" onmouseout="kotSkill2()" Id="Kot">Kotlin</div>
 	</div>
 </div>
 
@@ -75,50 +76,7 @@
 
 </section>
 
-<script>
-function pythonSkill() {
-  document.getElementById("Python").innerHTML = "Proficiency: Advanced";
-}
-function pythonSkill2() {
-  document.getElementById("Python").innerHTML = "Python";
-}
-function rSkill() {
-  document.getElementById("R").innerHTML = "Proficiency: Advanced";
-}
-function rSkill2() {
-  document.getElementById("R").innerHTML = "R";
-}
-function cppSkill() {
-  document.getElementById("Cpp").innerHTML = "Proficiency: Expert";
-}
-function cppSkill2() {
-  document.getElementById("Cpp").innerHTML = "C++";
-}
-function htmlSkill() {
-  document.getElementById("Html").innerHTML = "Proficiency: Advanced";
-}
-function htmlSkill2() {
-  document.getElementById("Html").innerHTML = "HTML";
-}
-function cssSkill() {
-  document.getElementById("Css").innerHTML = "Proficiency: Advanced";
-}
-function cssSkill2() {
-  document.getElementById("Css").innerHTML = "CSS";
-}
-function jsSkill() {
-  document.getElementById("Js").innerHTML = "Proficiency: Advanced";
-}
-function jsSkill2() {
-  document.getElementById("Js").innerHTML = "Javascript";
-}
-function utcSkill() {
-  document.getElementById("Utc").innerHTML = "Proficiency: Advanced";
-}
-function utcSkill2() {
-  document.getElementById("Utc").innerHTML = "Unix Terminal Commands ";
-}
-</script>
+<script src="skills.js"></script>
 
 
 </body>
